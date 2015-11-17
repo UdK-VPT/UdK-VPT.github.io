@@ -1,2 +1,2 @@
-# BuildingSystems_Web
+# Modelica-BuildingSystems
 Website of the BuildingSystems library
