@@ -40,17 +40,45 @@
             </nav>
 
             <div class="jumbotron">
-                <h1>Examples</h1>
-                <p>The BuildingSystems library can be used for simulation models on different levels of detail.</p>
+                <h1>Features</h1>
+                <p>The BuildingSystems library has a flexible modelling architecture and
+                can be used for a large spectrum of modelling and simulation purposes.</p>
             </div>
-            
+
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3 class="panel-title">General features</h3>
+                </div>
+                <div class="panel-body">
+                    <ul>
+                        <li> Supports the present Modelica version 3.3
+                        <li> Its a Open Source library (Modelica License Version 2)
+                        <li> Uses the <a href="https://github.com/iea-annex60/modelica-annex60">Annex 60 model library</a> as a core layer
+                        <li> Includes databases for weather data, building materials, building constructions and energy plant componenets
+                    </u>
+                </div>
+            </div>
+
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Building simulation</h3>
+                </div>
+                <div class="panel-body">
+                    <ul>
+                        <li> Hierarchical modelling approach (models of building elements, single zones, multi-zone buildings, districts)
+                        <li> Zones and building models with a different levels of detail (low-order models, 1D, 3D)
+                        <li> Thermal and hygrothermal building models
+                    </u>
+                </div>
+            </div>
+
             <div class="row">
                 <div class="col-md-4 col-sm-6 col-xs-12">
                     <div class="thumbnail">
                         <img src="./img/RoomSimulation.PNG">
                         <div class="caption">
                             <h3>Room simulation</h3>
-                            <p>Lore ipsum dolor sit amet, consectetur adipisicing elit, sed eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+                            <p>Thermal room simulation model which uses the 3 dimensional modelling approach of the library</p>
                         </div>
                     </div>
                 </div>
@@ -59,7 +87,7 @@
                         <img src="./img/MultizoneSimulation.PNG">
                         <div class="caption">
                             <h3>Building simulation</h3>
-                            <p>Lore ipsum dolor sit amet, consectetur adipisicing elit, sed eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+                            <p>Multi-zone thermal building model based on the 1 dimensional modelling approach of the library</p>
                         </div>
                     </div>
                 </div>
@@ -68,11 +96,37 @@
                         <img src="./img/DistrictSimulation.PNG">
                         <div class="caption">
                             <h3>District simulation</h3>
-                            <p>Lore ipsum dolor sit amet, consectetur adipisicing elit, sed eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+                            <p>District model which consists of al lot of low-order building models of the library</p>
                         </div>
                     </div>
                 </div>
             </div>
+
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Energy plant simulation</h3>
+                </div>
+                <div class="panel-body">
+                    <ul>
+                        <li> HVAC system modelling (heating systems, air-conditioning systems)
+                        <li> Renewable energy systems (solar thermal systems, photovoltaics systems)
+                        <li> District heating and cooling grids
+                    </u>
+                </div>
+            </div>
+
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Integrated building and plant simulation</h3>
+                </div>
+                <div class="panel-body">
+                    <ul>
+                        <li> Full coupled system models, which consists of one or several building models and energy supply system models
+                        <li> Examples: Solar thermal heating system, Photovoltaic cooling systems
+                    </u>
+                </div>
+            </div>
+
             <footer>
                 <p>&copy; UdK Berlin, Fachgebiet Versorgungsplanung und Versorgungstechnik 2015
             </footer>
