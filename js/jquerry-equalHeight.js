@@ -2,8 +2,8 @@
 Copied form this stackoverflow thread:
   http://stackoverflow.com/questions/9278569/equals-heights-of-thumbnails
 
-This is the solution of Tim Lowrimore and Benjamin Curtis which based on the
-initial one of Fabrizio Calderan!
+This is the solution of Tim Lowrimore which based on the initial one of
+Fabrizio Calderan!
 */
 
 
@@ -18,4 +18,4 @@ initial one of Fabrizio Calderan!
     }
 })(jQuery);
 
-$(".thumbnail").height(Math.max.apply(null, $(".thumbnail").map(function() { return $(this).height(); })));
+$(".thumbnails").find(".thumbnail").uniformHeight();
