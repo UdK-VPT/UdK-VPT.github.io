@@ -30,8 +30,8 @@
                         <ul class="nav navbar-nav">
                             <li><a href="./index.html">Home</a></li>
                             <li><a href="./features.html">Features</a></li>
-                            <li><a href="./system.html">System Simulation</a></li>
-                            <li class="active"><a href="./district.html">District Simulation</a></li>
+                            <li class="active"><a href="./system.html">System Simulation</a></li>
+                            <li><a href="./district.html">District Simulation</a></li>
                             <li><a href="./download.html">Download</a></li>
                             <li><a href="./documentation.html">Documentation</a></li>
                             <li><a href="./projects.html">Projects</a></li>
@@ -42,14 +42,12 @@
             </nav>
 
             <div class="jumbotron">
-                <h1>District Simulation</h1>
-                <p>The BuildingSystems library supports detailed energy analyses
-                of city districts. For this purpose, huge data sets of building parameters,
-                which describe the geometries and the constructions of all the building of a district
-                have to be gained. The use of the GIS systems QGIS in combination with
-                the Open eQuarter plug-in can generate these parameter data sets as an input
-                for a Modelica city district model (The used method is described in
-                <a href="./pub/BAUSIM2018_p1218.pdf">NytKreuKau2018</a>).
+                <h1>System Simulation</h1>
+                <p>The BuildingSystems library supports a detailed modelling
+                of real building energy systems. The structure, the physical behavior
+                and the functionality of a real system can be reflected by a so called "Digital Twin"
+                (The used method is described in
+                <a href="./pub/BAUSIM2018_p1151.pdf">NytKauKha2018</a>).
                 </thead>
                </p>
             </div>
@@ -60,13 +58,8 @@
                 </div>
                 <div class="panel-body">
                     <ul>
-                      <li> Uses the <a href="https://github.com/UdK-VPT/Open_eQuarter">Open eQuarter plug-in for QGis</a> for the
-                      parameter analysis for large populations of buildings.</li>
-                      <li> Based on the gained building parameters the Modelica district model
-                        is automatically generated with the tool <a href="https://github.com/UdK-VPT/CoTeTo"
-                        >CoTeTo</a> for template based code generation.</li>
-                      <li> The Modelica district model is able to calculate the dynamic heating and cooling demand of the entire district
-                          and for each individual building.</li>
+                      <li> Good understanding of complex building energy systems by using sub models on multiple hierarchy levels.</li>
+                      <li> Use of virtual sensors for comparisons with the real technical system.</li>
                     </ul>
                 </div>
             </div>
@@ -74,55 +67,75 @@
             <div class="row">
                 <div class="col-md-6 col-sm-6 col-xs-12">
                     <div class="thumbnail">
-                        <img src="./img/WinsDistrict.png" alt="">
-                        <figcaption style="text-align:right; font-style:italic"> Image source: Apple Maps </figcaption>
+                        <img src="./img/RooftopBuilding.png" alt="">
+                        <figcaption style="text-align:right; font-style:italic"> Image source: Team Rooftop </figcaption>
                         <div class="caption">
-                            <h3>Analyzed city district</h3>
-                            <p>City district "Winsstrasse" in the city center of Berlin.</p>
+                            <h3>Real technical system</h3>
+                            <p>Rooftop building from the Solar Decathlon Europe 2014.</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-6 col-sm-6 col-xs-12">
                     <div class="thumbnail">
-                        <img src="./img/WinsDistrict_nFloors.png" alt="">
+                        <img src="./img/DigitalTwin.png" alt="">
                         <figcaption style="text-align:right; font-style:italic"> Image source: UdK Berlin </figcaption>
                         <div class="caption">
-                            <h3>Parameter analysis with Open eQuarter (1)</h3>
-                            <p>Number of stories per building.</p>
+                            <h3>"Digital Twin" of the real system</h3>
+                            <p>Virtual model of the Rooftop building</p>
                         </div>
                     </div>
                 </div>
               </div>
               <div class="col-md-6 col-sm-6 col-xs-12">
                   <div class="thumbnail">
-                      <img src="./img/WinsDistrict_UFac.png" alt="">
+                      <img src="./img/RooftopSystemModel.png" alt="">
                       <figcaption style="text-align:right; font-style:italic"> Image source: UdK Berlin </figcaption>
                       <div class="caption">
-                          <h3>Parameter analysis with Open eQuarter (2)</h3>
-                          <p>U-values of the opaque facades, determined on the base of the building age.</p>
+                          <h3>System Model</h3>
+                          <p>System model and its sub models (building, HVAC system, PV system, ambient).</p>
                       </div>
                   </div>
               </div>
-                <div class="col-md-6 col-sm-6 col-xs-12">
-                    <div class="thumbnail">
-                        <img src="./img/WinsDistrict_Modelica.png" alt="">
-                        <figcaption style="text-align:right; font-style:italic"> Image source: UdK Berlin </figcaption>
-                        <div class="caption">
-                            <h3>District simulation with Modelica</h3>
-                            <p>Modelica district model with 455 thermal low-order building models.</p>
-                        </div>
-                    </div>
-                </div>
+              <div class="col-md-6 col-sm-6 col-xs-12">
+                  <div class="thumbnail">
+                      <img src="./img/RooftopBuildingModel.png" alt="">
+                      <figcaption style="text-align:right; font-style:italic"> Image source: UdK Berlin </figcaption>
+                      <div class="caption">
+                          <h3>Building model (sub model)</h3>
+                          <p>Building model and its sub models (building zones and construction elements).</p>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-md-6 col-sm-6 col-xs-12">
+                  <div class="thumbnail">
+                      <img src="./img/RooftopHVACModel.png" alt="">
+                      <figcaption style="text-align:right; font-style:italic"> Image source: UdK Berlin </figcaption>
+                      <div class="caption">
+                          <h3>HVAC Model</h3>
+                          <p>HVAC system and its sub models (heat pump, floor heatings, cooling ceilings, solar thermal system).</p>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-md-6 col-sm-6 col-xs-12">
+                  <div class="thumbnail">
+                      <img src="./img/RooftopPVModel.png" alt="">
+                      <figcaption style="text-align:right; font-style:italic"> Image source: UdK Berlin </figcaption>
+                      <div class="caption">
+                          <h3>PV system model (sub model)</h3>
+                          <p>Photovoltaic system and its sub models (fixed and one-axis tracked PV modules).</p>
+                      </div>
+                  </div>
+              </div>
             </div>
 
             <div class="row">
                 <div class="col-md-12 col-sm-12 col-xs-12">
                     <div class="thumbnail">
-                        <img src="./img/Results_DistrictModel.png" alt="">
+                        <img src="./img/Results_SystemModel.png" alt="">
                         <figcaption style="text-align:right; font-style:italic"> Image source: UdK Berlin </figcaption>
                         <div class="caption">
                             <h3>Simulation results</h3>
-                            <p>Yearly heating load of the entire district (455 buildings).</p>
+                            <p>Simulation results for a winter period of the Rooftop system model.</p>
                         </div>
                     </div>
                 </div>
